@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-curso{
+    background-color: #1e5383;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+nav{
+    background-color: rgb(21, 22, 22);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav :hover{
+    font-size: 21px;    
+}
+
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 70px;
+    flex: 1;
+}
+
+#name {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex: 1 calc(50% - 15px);
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.card img {
+    padding-left: 20px;
+    width: 500px;
+}
+
+.card-apresentation {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.card-apresentation h3 {
+    flex-basis: 100%;
+    background-color: #1e5383;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-apresentation p {
+    flex: 1;              
+    padding: 15px;
+    margin: 0;
+}
+
+.sobre-mim {
+    display: flex;
+}
+
+.sobre-mim img {
+    width: 150px;        
+    height: auto;
+    padding: 15px;
+}
+
+.sobre-cidade {
+    display: flex;
+    padding: 15px;
+    gap: 5px;
+}
+
+h4 {
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.sobre-cidade img {
+    width: 200px;
+}
+
+.card-recursos {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-recursos h3 {
+    background-color: #1e5383;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.card-recursos ul {
+    padding: 30px;
+    margin: 0;
+}
+
+.card-recursos li {
+    padding-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e5383;
+    padding: 15px;
+}
+
+footer #anoatual, footer p {
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+}
