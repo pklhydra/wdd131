@@ -7,6 +7,11 @@ body{
     flex-direction: column;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 #titulo-curso{
     background-color: #1e5383;
     height: 120px;
@@ -38,21 +43,19 @@ nav a{
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin: 70px;
+    margin: 40px;
     flex: 1;
 }
 
 #name {
-    flex-basis: 100%;
+    grid-column: 1 / -1;
     text-align: center;
 }
 
 .card {
-    display: flex;
-    flex: 1 calc(50% - 15px);
     padding: 12px;
     box-sizing: border-box;
     border: 1px solid grey;
