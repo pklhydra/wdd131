@@ -1,0 +1,60 @@
+@media (min-width: 700px) {
+    /* 1. O botão hambúrguer some no desktop */
+    #menu-btn {
+        display: none;
+    }
+
+    /* 2. Header reorganiza em linha e alinha título e menu */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    header a {
+        white-space: nowrap;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    /* 3. Menu volta a ficar visível e em linha horizontal */
+    #menu-links {
+        display: flex !important; /* Sempre visível */
+        flex-direction: row;
+        margin-top: 0;
+        gap: 0.75rem;
+    }
+
+    #menu-links a {
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+    }
+
+    #menu-links a:hover {
+        background-color: #f4d06f;
+        color: #111;
+    }
+
+    /* 4. Grade passa a ter 3 colunas e ocupa até 1000px */
+    main {
+        max-width: 1200px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1; /* Título atravessa as 3 colunas */
+    }
+
+    figure img {
+        width: au;
+        height: auto;
+    }
+}
