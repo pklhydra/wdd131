@@ -24,5 +24,5 @@ if (anoAtual) {
 // 3. Data e hora da última modificação
 const ultimaModificacao = document.querySelector('#ultima-mod')
 if (ultimaModificacao) {
-    ultimaModificacao.textContent = 'Última modificacao:' + document.lastModified;
+    ultimaModificacao.textContent = 'Última modificacao: ' + document.lastModified;
 }

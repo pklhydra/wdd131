@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yan Antunes Machado">
+    <meta name="description" content="Um site de uma pagina do meu pais para aprensentar para a faculdade.">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=partly_cloudy_day" />
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+        <span></span>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="imagens/macaco-pequeno.jpg" media="(max-width: 800px)" >
+            <img src="imagens/macaco-grande.jpg" alt="Imagem de animal macaco">
+        </picture>
+
+        <div class="dados">
+            <div class="lista-dados data">
+                <h2>Data</h2>
+                <div class="linha">
+                    <span class="rotulo">Area: </span>
+                    <span class="valor">587,041 sq km</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Population: </span>
+                    <span class="valor">27,691,018</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Capital: </span>
+                    <span class="valor">Antananarivo</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Languages: </span>
+                    <span class="valor">Malagasy, French</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Currency </span>
+                    <span class="valor">Malagasy Ariary</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Time Zone: </span>
+                    <span class="valor">UTC+3</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Calling Code: </span>
+                    <span class="valor">+261</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Internet TLD: </span>
+                    <span class="valor">.mg</span>
+                </div>
+            </div>
+            <div class="lista-dados weather">
+                <h2>Weather <span id="icon-weather-desktop">⛅ </span></h2>
+                <span id="icon-weather-mobile"><img src="imagens/climate.svg" alt="icone do clima"></span>
+                <div class="linha">
+                    <span class="rotulo">Temperature: </span>
+                    <span class="valor">10C</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Conditions: </span>
+                    <span class="valor">Partly Cloudy</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Wind: </span>
+                    <span class="valor">5 km/h</span>
+                </div>
+                <div class="linha">
+                    <span class="rotulo">Wind Chill: </span>
+                    <span class="valor" id="wind-chill"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <Span><span id="year"></span> - Yan Antunes Machado</Span>
+        <span id= "last-modification"></span>
+    </footer>
+</body>
+</html>
