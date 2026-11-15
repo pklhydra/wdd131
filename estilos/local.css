@@ -1,5 +1,8 @@
 :root {
     --cor-verde: #1b7344;
+    --cor-vermelha: red;
+    --cor-fundo1: #fff;
+    --cor-fonte1: #fff;
 }
 
 * {
@@ -14,9 +17,9 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: var(--cor-fonte1);
     height: 90px;
-    background-color: red;
+    background-color: var(--cor-vermelha);
 }
 
 header h1 {
@@ -59,7 +62,7 @@ picture, img {
 }
 
 .lista-dados {
-    background-color: #ffffffb7;
+    background-color: var(--cor-fundo1);
     text-align: center;
     padding: 30px;
     margin: 20px;
@@ -67,7 +70,7 @@ picture, img {
 }
 
 .dados h2 {
-    color: #fff;
+    color: var(--cor-fonte1);
     background-color: var(--cor-verde);
     width: 170px;
 }
@@ -84,7 +87,7 @@ picture, img {
 }
 
 footer {
-    background-color: red;
+    background-color: var(--cor-vermelha);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +95,7 @@ footer {
     height: 100%;
     padding: 10px;
     gap: 5px;
-    color: #fff;
+    color: var(--cor-fonte1);
     flex: 1;
 }
 
@@ -130,5 +133,10 @@ footer {
     .weather {
         bottom: 30px;
         right: 30px;
+    }
+
+    .weather h2::after{
+        margin-left: 10px;
+        font-size: 1.5rem;
     }
 }
