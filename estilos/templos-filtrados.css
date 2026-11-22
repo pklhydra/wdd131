@@ -44,6 +44,9 @@ nav {
     width: 100%;
 }
 
+nav ul {
+    display: flex;
+}
 
 #menu-links {
     display: none;
